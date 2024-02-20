@@ -1,0 +1,37 @@
+.section5_sent {
+  border: 1px solid #1EB2A6;
+  width: 100%;
+  height: 200px;
+  background-color: #1EB2A6;
+  display: flex;
+}
+.section5_sent_text {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto;
+  max-width: 1180px;
+}
+.section5_sent_text_p1 {
+  color: white;
+  font-size: 2rem;
+}
+.section5_sent_text_p2 {
+  color: rgb(219, 216, 213);
+}
+.section5_sent_mail {
+  margin: 5rem auto;
+}
+.section5_sent_mail_input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #1EB2A6;
+  width: 300px;
+}
+.section5_sent_mail_button {
+  border: none;
+  background-color: blue;
+  color: white;
+  width: 50px;
+  border-radius: 6px;
+}/*# sourceMappingURL=section5.css.map */

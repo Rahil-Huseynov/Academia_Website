@@ -1,0 +1,47 @@
+$--max-width-size:1180px;
+%centermargin{
+    margin: 0 auto;
+}
+
+.section3 {
+
+    &_fontdiv {
+        display: flex;
+        flex-direction: column;
+        @extend %centermargin;
+        text-align: center;
+        max-width: $--max-width-size;
+
+        &_p {
+            font-size: 3rem;
+            padding-top: 1rem;
+            font-weight: 800;
+        }
+    }
+
+    &_item {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        @extend %centermargin;
+        padding-top: 2rem;
+        max-width: $--max-width-size;
+        gap: 2rem;
+
+        &_items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            border: none;
+            background-color: bisque;
+            height: 10rem;
+
+        }
+
+        &_items:hover {
+            background-color: #1EB2A6;
+        }
+
+    }
+}

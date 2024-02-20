@@ -1,0 +1,29 @@
+@import './assets/main.scss';
+@import './assets/section2.scss';
+@import './assets/section3.scss';
+@import './assets/section4.scss';
+@import './assets/section5.scss';
+
+
+.writing {
+    background-image: url('image/writing.jfif');
+    background-position: center center;
+    background-size: cover;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 15rem;
+
+    &_div {
+        display: grid;
+        max-width: 1180px;
+        margin: 0 auto;
+        gap: 10rem;
+        padding-top: 6rem;
+        grid-template-columns: repeat(4, 1fr);
+
+        &_item {
+            display: flex;
+        }
+    }
+}

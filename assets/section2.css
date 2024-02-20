@@ -1,0 +1,46 @@
+.section2 {
+  margin: 0 auto;
+}
+
+.section2 {
+  display: flex;
+  max-width: 1180px;
+}
+.section2_backgroungimage {
+  height: 600px;
+  width: 500px;
+  max-width: 1180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.section2_p_learn {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-top: 4rem;
+  width: 600px;
+}
+.section2_p_learn_p1 {
+  color: #1EB2A6;
+  font-weight: 800;
+}
+.section2_p_learn_p2 {
+  font-size: 3rem;
+  padding-top: 1rem;
+  font-weight: 600;
+  color: rgb(64, 64, 64);
+}
+.section2_item {
+  border: 1px solid black;
+  border: none;
+  height: 100px;
+  align-items: center;
+  display: flex;
+}
+.section2_item_items_p {
+  padding-top: 0.5rem;
+}
+.section2_item:hover {
+  background-color: #1EB2A6;
+}/*# sourceMappingURL=section2.css.map */

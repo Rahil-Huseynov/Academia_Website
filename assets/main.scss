@@ -1,0 +1,139 @@
+$--icon-default-size: 40px;
+$--max-width-size:1180px;
+%centermargin{
+    margin: 0 auto;
+}
+
+* {
+    @extend %centermargin;
+}
+
+main {
+    background-image: url('image/book-1822474_1280.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .header_container {
+        @extend %centermargin;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: $--max-width-size;
+        color: white;
+        padding-top: 1rem;
+
+
+        &_element h1:hover {
+            cursor: pointer;
+            color: green;
+
+        }
+
+        &_working {
+            display: flex;
+            align-items: center;
+            padding-left: 7rem;
+
+
+            &_span {
+                display: flex;
+                flex-direction: column;
+                padding-left: 1rem;
+            }
+        }
+
+        &_working img {
+            width: $--icon-default-size;
+        }
+
+
+        &_phone {
+            display: flex;
+            align-items: center;
+            padding-left: 7.5rem;
+
+            &_span {
+                display: flex;
+                flex-direction: column;
+                padding-left: 1rem;
+            }
+        }
+
+        &_phone img {
+            width: $--icon-default-size;
+        }
+
+
+        &_sosialmedia {
+            display: flex;
+            padding-left: 6rem;
+
+            &_elements {
+                width: $--icon-default-size;
+                height: $--icon-default-size;
+                border-radius: 50%;
+            }
+
+            &_elements:hover {
+                background-color: cyan;
+                cursor: pointer;
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        max-width: $--max-width-size;
+        margin: 3rem auto;
+
+        .nav_ul {
+
+            &_li {
+                display: inline-block;
+                list-style: none;
+                font-size: 1.1rem;
+                margin: 1rem auto;
+                padding-right: 2.4rem;
+                align-items: center;
+                color: white;
+            }
+
+            &_li:hover {
+                cursor: pointer;
+                color: green;
+            }
+        }
+    }
+
+    .section1 {
+        display: grid;
+        @extend %centermargin;
+        max-width: $--max-width-size;
+
+        &_welcome {
+            color: hwb(15 81% 2%);
+            font-size: 2rem;
+        }
+
+        &_education {
+            color: white;
+            font-size: 3rem;
+            width: 500px;
+            padding-top: 1rem;
+        }
+
+        &_about {
+            color: white;
+            width: 500px;
+            padding-top: 2rem;
+        }
+
+        &_button {
+            display: flex;
+            flex-direction: row;
+            padding-top: 2rem;
+            gap: 2rem;
+        }
+    }
+}
